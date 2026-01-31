@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Next Trip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =============================
+     Navigation (Shared)
+============================= -->
+<nav>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Next Trip Logo">
+        </a>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- =============================
+     Page Header
+============================= -->
+<section class="hero" style="height:40vh;">
+    <img src="images/contact-hero.jpg" alt="Contact Next Trip">
+    <div class="hero-text">
+        <h1>Contact Us</h1>
+        <p>Let’s plan your next journey together</p>
+    </div>
+</section>
+
+<!-- =============================
+     Contact Content
+============================= -->
+<section class="destinations">
+    <h2>Get in Touch</h2>
+
+    <p style="max-width:800px;margin:0 auto 30px;text-align:center;">
+        Have a question, need a tailored travel plan, or want help booking your next trip?
+        Reach out to us — we’d love to hear from you.
+    </p>
+
+    <!-- Contact Form (Netlify Forms) -->
+    <form name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          style="max-width:600px;margin:0 auto;">
+
+        <input type="hidden" name="form-name" value="contact">
+
+        <!-- Honeypot -->
+        <p style="display:none;">
+            <label>Don’t fill this out if you're human:
+                <input name="bot-field">
+            </label>
+        </p>
+
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Message</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+        <p style="margin-top:15px;text-align:center;">
+            Or email us directly at
+            <a href="mailto:info@nexttrip.com">info@nexttrip.com</a>
+        </p>
+    </form>
+</section>
+
+<!-- =============================
+     Footer (Shared)
+============================= -->
+<footer>
+    <p>&copy; 2026 Next Trip. All rights reserved.</p>
+</footer>
+
+<!-- =============================
+     Mobile Menu Script (Shared)
+============================= -->
+<script>
+function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('active');
+}
+</script>
+
+</body>
+</html>
