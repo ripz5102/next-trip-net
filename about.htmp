@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Next Trip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =============================
+     Navigation (Shared)
+============================= -->
+<nav>
+    <div class="logo">
+        <a href="index.html">
+            <img src="logo.png" alt="Next Trip Logo">
+        </a>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- =============================
+     Page Header
+============================= -->
+<section class="hero" style="height:40vh;">
+    <img src="about-hero.jpg" alt="About Next Trip">
+    <div class="hero-text">
+        <h1>About Next Trip</h1>
+        <p>Tailored travel experiences, designed around you</p>
+    </div>
+</section>
+
+<!-- =============================
+     About Content
+============================= -->
+<section class="destinations">
+    <h2>Who We Are</h2>
+
+    <p style="max-width:800px;margin:0 auto 20px;">
+        <strong>Next Trip</strong> is a tailored travel service provider focused on creating
+        personalized journeys that match your lifestyle, preferences, and budget.
+        We believe travel should be effortless, inspiring, and truly personal.
+    </p>
+
+    <p style="max-width:800px;margin:0 auto 20px;">
+        Whether you are planning a relaxing holiday, an adventure-filled escape,
+        or a carefully curated luxury experience, we work closely with trusted
+        global partners and white-label travel platforms to bring you the best
+        possible options.
+    </p>
+
+    <p style="max-width:800px;margin:0 auto;">
+        Our mission is simple: to take the stress out of travel planning and
+        replace it with excitement, confidence, and unforgettable experiences.
+    </p>
+</section>
+
+<!-- =============================
+     Why Choose Us
+============================= -->
+<section class="blog">
+    <h2>Why Choose Next Trip</h2>
+
+    <div class="blog-cards">
+        <div class="card">
+            <img src="tailored.jpg" alt="Tailored Travel">
+            <p>Tailored Travel Solutions</p>
+        </div>
+
+        <div class="card">
+            <img src="global.jpg" alt="Global Network">
+            <p>Global Partner Network</p>
+        </div>
+
+        <div class="card">
+            <img src="support.jpg" alt="Support">
+            <p>End-to-End Support</p>
+        </div>
+    </div>
+</section>
+
+<!-- =============================
+     Footer (Shared)
+============================= -->
+<footer>
+    <p>&copy; 2026 Next Trip. All rights reserved.</p>
+</footer>
+
+<!-- =============================
+     Mobile Menu Script (Shared)
+============================= -->
+<script>
+function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('active');
+}
+</script>
+
+</body>
+</html>
